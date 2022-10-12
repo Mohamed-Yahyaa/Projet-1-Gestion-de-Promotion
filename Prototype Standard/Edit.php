@@ -16,7 +16,6 @@ header("Location:index.php");
 }
 
 
-
 ?>
 
 <form method="POST">

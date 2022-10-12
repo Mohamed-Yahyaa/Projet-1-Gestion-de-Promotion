@@ -12,7 +12,7 @@ public function GetData(){
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
    $array= array();
     foreach ($GetData as $value){
-    $promo = new Promotion();
+    $promo = new Promo();
     $promo->SetId($value['id']);
     $promo->SetName($value['Name']);
     array_push($array,$promo);
@@ -21,14 +21,14 @@ public function GetData(){
     return $array ;
 }
 
-public function AddData($Promo){
+public function Add($Promo){
 
 $Name =$Promo->getName();
 
-$insertRow="INSERT INTO promo(`Name`) 
-VALUES( '$Name')";
+$insertRow="INSERT INTO promo(`Name`)
+VALUES('$Name')";
 
-mysqli_query(getConnection(), $insertRow);
+mysqli_query(GetConnection(),$insertRow);
 
 }
 

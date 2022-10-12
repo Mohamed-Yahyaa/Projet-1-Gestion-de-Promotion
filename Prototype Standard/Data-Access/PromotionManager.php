@@ -12,7 +12,7 @@ public function GetData(){
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
    $array= array();
     foreach ($GetData as $value){
-    $promo = new Promotion();
+    $promo = new Promo();
     $promo->SetId($value['id']);
     $promo->SetName($value['Name']);
     array_push($array,$promo);
@@ -44,7 +44,7 @@ function Getpromotion($id){
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
    
     foreach ($GetData as $value){
-    $promo = new Promotion();
+    $promo = new Promo();
     $promo->SetId($value['id']);
     $promo->SetName($value['Name']);
    

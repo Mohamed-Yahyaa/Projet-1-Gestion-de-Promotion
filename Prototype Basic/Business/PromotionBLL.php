@@ -20,7 +20,7 @@ class PromoBLL{
     }
     function AddData($Promo){
 
-       return $this->PromoManager->AddData($Promo);
+       return $this->PromoManager->Add($Promo);
 
     }
     

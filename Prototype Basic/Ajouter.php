@@ -1,16 +1,14 @@
 
-
-
 <?php
 
 include "Business/PromotionBLL.php";
 $PromoManager = new PromoBLL();
 if(!empty($_POST)){
 
-    $Promo = new Promotion();
+    $Promo = new Promo();
 	$Promo->setName($_POST['Name']);
     
-    $GetData =  $PromoManager->AddData($Promo);
+    $PromoManager->AddData($Promo);
 	
 	// Redirection vers la page index.phpnpn
 	header("Location: index.php");
