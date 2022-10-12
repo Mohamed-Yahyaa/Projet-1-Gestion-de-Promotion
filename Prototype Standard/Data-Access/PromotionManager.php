@@ -32,7 +32,12 @@ mysqli_query(GetConnection(),$insertRow);
 
 }
 
+public function Delete($id){
+    $DeleteRow = "DELETE  FROM promo where id = $id";
+    mysqli_query(getConnection(),$DeleteRow);
 
+
+}
 }
 
 

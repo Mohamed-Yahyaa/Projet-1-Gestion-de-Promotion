@@ -23,6 +23,11 @@ class PromoBLL{
        return $this->PromoManager->Add($Promo);
 
     }
+    function DeleteData($id){
+
+      return $this->PromoManager->delete($id);
+      
+    }
     
  
 }

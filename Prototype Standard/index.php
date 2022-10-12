@@ -27,6 +27,9 @@ $GetData =  $PromoManager->GetAllData();
         ?>
       <td> <?php echo $value->GetId() ?></td>
       <td> <?php echo $value->getName() ?></td>
+      <td>
+        <a href="Delete.php?id=<?php echo $value->getId() ?>">Delete</a>
+      </td>
      
      
     </tr>
