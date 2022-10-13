@@ -1,14 +1,14 @@
 <?php 
 
 include 'promotion.php';
-include 'ConnectionDB.php';
+include 'MySqlConnection.php';
 
-class PromoManager {
+class PromotionDAL extends Connection {
 
 public function GetData(){
 
     $selectRow = "SELECT * from promo";
-    $Query = mysqli_query(GetConnection(),$selectRow);
+    $Query = mysqli_query($this->connect(),$selectRow);
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
    $array= array();
     foreach ($GetData as $value){
@@ -28,7 +28,7 @@ $Name =$Promo->getName();
 $insertRow="INSERT INTO promo(`Name`) 
 VALUES( '$Name')";
 
-mysqli_query(getConnection(), $insertRow);
+mysqli_query($this->connect(), $insertRow);
 
 }
 

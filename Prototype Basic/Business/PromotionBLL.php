@@ -1,6 +1,6 @@
 <?php
 
-include ("Data-Access/PromotionManager.php");
+include ("../Data-Access/PromotionDAL.php");
 
 
 class PromoBLL{
@@ -8,7 +8,7 @@ class PromoBLL{
     private $PromoManager = null ;
     public  function __construct()
     {
-       $this->PromoManager = new PromoManager();
+       $this->PromoManager = new PromotionDAL();
     
     }
 

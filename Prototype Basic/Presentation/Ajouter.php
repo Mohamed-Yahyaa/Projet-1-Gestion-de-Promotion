@@ -3,7 +3,7 @@
 
 <?php
 
-include "Business/PromotionBLL.php";
+include "../Business/PromotionBLL.php";
 $PromoManager = new PromoBLL();
 if(!empty($_POST)){
 

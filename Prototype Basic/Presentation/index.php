@@ -1,7 +1,7 @@
 <?php 
 
 // include 'Data_Acess/PromoManager.php';
-include "Business/PromotionBLL.php";
+include "../Business/PromotionBLL.php";
 $PromoManager = new PromoBLL();
 $GetData =  $PromoManager->GetAllData();
 
