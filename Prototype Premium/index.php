@@ -10,31 +10,6 @@ $GetData =  $PromoManager->GetAllData();
 
 
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#search').keyup(function(){
-      var input = $(this).val();
-      // alert(input);
-
-      if (input !=' ') {
-        $.ajax({
-          url:"Data-Access/Search.php",
-          method:"POST",
-          data:{key:input},
-          success:function (data){
-            $('#showS').html(data);
-          }
-        });
-        
-      }
-     
-    });
-  });
-</script>
-<form action="" method="POST">
-<input type="text" id="search" name="input" >
-</form>
 
 <table class="table">
   <thead>
@@ -43,8 +18,7 @@ $GetData =  $PromoManager->GetAllData();
       <th scope="col">Name</th>
     </tr>
   </thead>
-  
-  <tbody id="showS">
+  <tbody>
     <tr>
         <?php 
         foreach($GetData as $value){
