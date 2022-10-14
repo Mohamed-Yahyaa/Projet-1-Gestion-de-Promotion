@@ -1,6 +1,6 @@
 <?php
 
-include ("Data-Access/PromotionManager.php");
+include ("../Data-Access/PromotionManager.php");
 
 
 class PromoBLL{

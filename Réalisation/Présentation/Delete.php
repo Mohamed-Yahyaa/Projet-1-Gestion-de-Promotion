@@ -1,6 +1,6 @@
 <?php
 
-include "Business/PromotionBLL.php";
+include "../Business/PromotionBLL.php";
 
 $PromoBLL = new PromoBLL();
 
