@@ -1,6 +1,6 @@
 <?php
 
-include ("../Data-Access/PromotionManager.php");
+include ("../Data-Access/PromotionDAL.php");
 
 
 class PromoBLL{
@@ -44,3 +44,4 @@ class PromoBLL{
 }
 
 ?>
+
