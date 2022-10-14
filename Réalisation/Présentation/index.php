@@ -33,7 +33,7 @@ $GetData =  $PromoManager->GetAllData();
               <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
                 <div class="col-6">
                   <div class="form-outline">
-                    <input type="text" id="search" name="search" id="search" placeholder="&#xF002; Search " style="font-family:Arial, FontAwesome" class="form-control" />
+                    <input type="text" id="search" name="search" placeholder="&#xF002; Search " style="font-family:Arial, FontAwesome" class="form-control" />
 
                     <!-- <div id="result"></div> -->
                   </div>

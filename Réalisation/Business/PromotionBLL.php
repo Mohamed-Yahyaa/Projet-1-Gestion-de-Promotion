@@ -29,14 +29,14 @@ class PromoBLL{
 
     }
 
-    function GetpromoData($id){
+    function Edit($id){
 
-      return $this->PromoManager->Getpromotion($id);
+      return $this->PromoManager->Edit($id);
 
    }
-   function EditData($id,$name){
+   function Update($id,$name){
 
-      return $this->PromoManager->EditData($id,$name);
+      return $this->PromoManager->Update($id,$name);
 
    }
     

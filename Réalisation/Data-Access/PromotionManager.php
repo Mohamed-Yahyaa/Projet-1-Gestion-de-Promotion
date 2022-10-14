@@ -38,7 +38,7 @@ public function Delete($id){
 
 
 }
-function Getpromotion($id){
+function Edit($id){
     $SelectRowId = "SELECT * FROM promo WHERE id=$id";
     $Query = mysqli_query(GetConnection(),$SelectRowId);
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
@@ -53,7 +53,7 @@ function Getpromotion($id){
     return $promo ;
 }
 
-public function EditData($id,$name) {
+public function Update($id,$name) {
     // Requête SQL
     $RowUpdate = "UPDATE promo SET 
     `Name`='$name'
